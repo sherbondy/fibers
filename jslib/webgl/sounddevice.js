@@ -878,7 +878,7 @@ var WebGLSoundSource = (function () {
                 },
                 set: function setVelocityFn(newVelocity) {
                     this._velocity = VMath.v3Copy(newVelocity, this._velocity);
-                    this.pannerNode.setVelocity(newVelocity[0], newVelocity[1], newVelocity[2]);
+                    //this.pannerNode.setVelocity(newVelocity[0], newVelocity[1], newVelocity[2]);
                 },
                 enumerable: true,
                 configurable: false
@@ -1416,7 +1416,7 @@ var WebGLSoundDevice = (function () {
                 },
                 set: function setListenerVelocityFn(velocity) {
                     listenerVelocity = VMath.v3Copy(velocity, listenerVelocity);
-                    listener.setVelocity(velocity[0], velocity[1], velocity[2]);
+                    //listener.setVelocity(velocity[0], velocity[1], velocity[2]);
                 },
                 enumerable: true,
                 configurable: false
